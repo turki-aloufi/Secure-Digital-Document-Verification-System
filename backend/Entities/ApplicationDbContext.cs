@@ -1,5 +1,5 @@
 // Data/ApplicationDbContext.cs
-using backend.Models;
+using backend.Entities;
 using Microsoft.EntityFrameworkCore;
 
 public class ApplicationDbContext : DbContext

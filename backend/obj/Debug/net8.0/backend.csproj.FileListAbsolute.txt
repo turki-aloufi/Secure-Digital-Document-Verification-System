@@ -168,3 +168,5 @@ C:\Users\turki\OneDrive\سطح المكتب\dev training program\week3\Secure_Di
 C:\Users\turki\OneDrive\سطح المكتب\dev training program\week3\Secure_Digital_Document_Verification_System\backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\turki\OneDrive\سطح المكتب\dev training program\week3\Secure_Digital_Document_Verification_System\backend\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\turki\OneDrive\سطح المكتب\dev training program\week3\Secure_Digital_Document_Verification_System\backend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\turki\OneDrive\سطح المكتب\dev training program\week3\Secure_Digital_Document_Verification_System\backend\bin\Debug\net8.0\Dapper.dll
+C:\Users\turki\OneDrive\سطح المكتب\dev training program\week3\Secure_Digital_Document_Verification_System\backend\bin\Debug\net8.0\backend.staticwebassets.runtime.json
