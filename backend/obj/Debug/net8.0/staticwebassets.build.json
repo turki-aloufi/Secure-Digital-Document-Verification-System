@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/k+6VPtyolJdnA754RXcEPUSNm69b7n+Iu+LznoAkFs=",
+  "Hash": "X+cUrGQbW5prL4n8tAsZ4GqPhjxKpqGxEsZw8FUygkY=",
   "Source": "backend",
   "BasePath": "_content/backend",
   "Mode": "Default",
@@ -34,6 +34,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\report.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\turki\\OneDrive\\سطح المكتب\\dev training program\\week3\\Secure_Digital_Document_Verification_System\\backend\\wwwroot\\uploads\\Screenshot 2025-03-04 142419.png",
+      "SourceId": "backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\turki\\OneDrive\\سطح المكتب\\dev training program\\week3\\Secure_Digital_Document_Verification_System\\backend\\wwwroot\\",
+      "BasePath": "_content/backend",
+      "RelativePath": "uploads/Screenshot 2025-03-04 142419.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\Screenshot 2025-03-04 142419.png"
     }
   ]
 }

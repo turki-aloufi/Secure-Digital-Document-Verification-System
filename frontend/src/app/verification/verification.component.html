@@ -1,0 +1,19 @@
+<div class="card shadow-sm">
+  <div class="card-header bg-primary text-white">
+    <h2 class="mb-0">Verify Document</h2>
+  </div>
+  <div class="card-body">
+    <form [formGroup]="verifyForm" (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <label for="verificationCode" class="form-label">Verification Code</label>
+        <input type="text" class="form-control" id="verificationCode" formControlName="verificationCode" placeholder="Enter code">
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="verifyForm.invalid || loading">
+        <span *ngIf="loading" class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+        Verify
+      </button>
+    </form>
+    <div *ngIf="success" class="alert alert-success mt-3">{{ success }}</div>
+    <div *ngIf="error" class="alert alert-danger mt-3">{{ error }}</div>
+  </div>
+</div>

@@ -1,4 +1,3 @@
-// Controllers/DocumentsController.cs
 using backend.Entities;
 using backend.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -24,7 +23,6 @@ public class DocumentsController : ControllerBase
         if (uploadDto.File == null || uploadDto.File.Length == 0)
             return BadRequest("No file uploaded.");
 
-        // Save the file to a directory (e.g., wwwroot/uploads)
         var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads");
         if (!Directory.Exists(uploadsFolder))
             Directory.CreateDirectory(uploadsFolder);
@@ -35,13 +33,11 @@ public class DocumentsController : ControllerBase
             await uploadDto.File.CopyToAsync(stream);
         }
 
-        // Generate a unique VerificationCode (e.g., GUID)
-        var verificationCode = Guid.NewGuid().ToString("N").Substring(0, 12); // 12-character unique code
+        var verificationCode = Guid.NewGuid().ToString("N").Substring(0, 12);
 
-        // Create document entity
         var document = new Document
         {
-            UserId = 1, // Replace with actual authenticated user ID (e.g., from JWT)
+            UserId = 1, // Replace with actual authenticated user ID
             Title = uploadDto.Title,
             FilePath = filePath,
             VerificationCode = verificationCode,
@@ -85,5 +81,24 @@ public class DocumentsController : ControllerBase
             return NotFound();
 
         return Ok(document);
+    }
+
+    // NEW: GET /api/documents - Retrieve all documents
+    [HttpGet]
+    public async Task<IActionResult> GetAllDocuments()
+    {
+        var documents = await _context.Documents
+            .Select(d => new DocumentDto
+            {
+                Id = d.Id,
+                Title = d.Title,
+                FilePath = d.FilePath,
+                VerificationCode = d.VerificationCode,
+                Status = d.Status,
+                CreatedAt = d.CreatedAt
+            })
+            .ToListAsync();
+
+        return Ok(documents);
     }
 }
