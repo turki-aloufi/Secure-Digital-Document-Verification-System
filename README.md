@@ -133,15 +133,3 @@ Feel free to fork this repo, submit issues, or send pull requests!
 
 ## License
 This project is unlicensed—use it as you see fit!
-
----
-
-### Notes
-- **Directory Structure**: I assumed `backend/` and `frontend/` as folder names—adjust if your project uses different names (e.g., `DocumentManagerBackend/`).
-- **Database**: The README assumes you’re using EF Core migrations. If not, update the setup steps (e.g., manual DB creation).
-- **Screenshots**: You can add these by taking screenshots and placing them in a `screenshots/` folder, then linking them like `![Dashboard](screenshots/dashboard.png)`.
-
-To use this:
-1. Create a file named `README.md` in your project root.
-2. Copy-paste the content above.
-3. Customize as needed (e.g., project name, specific versions, additional credits).
